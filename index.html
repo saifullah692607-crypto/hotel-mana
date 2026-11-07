@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Hotel - Barikot Swat</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        * {
+            perspective: 1000px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-[url('./download.jpg')] bg-cover bg-center bg-no-repeat min-h-screen bg-fixed relative">
+
+    <div class="absolute inset-0 bg-black/70 -z-10"></div>
+
+    <!-- NAV - Responsive -->
+    <nav
+        class="flex justify-between items-center p-4 md:p-[20px] text-white sticky top-0 z-50 bg-black/30 backdrop-blur-md">
+        <div class="text-[20px] md:text-[23px] uppercase font-medium">Hotel <span class="text-amber-500">Tomarrow</span>
+        </div>
+        <ul class="hidden md:flex capitalize gap-[20px] font-semibold">
+            <li><a href="#home" class="hover:text-amber-400">home</a></li>
+            <li><a href="#about" class="hover:text-amber-400">about</a></li>
+            <li><a href="#rooms" class="hover:text-amber-400">rooms</a></li>
+        </ul>
+        <button
+            class="uppercase text-[10px] md:text-[12px] font-bold bg-amber-400 px-4 py-2 rounded-full hover:bg-amber-500 text-black">Book
+            Now</button>
+    </nav>
+
+    <!-- HERO - Responsive Center -->
+    <div id="home"
+        class="min-h-[80vh] flex flex-col justify-center items-center text-center px-6 md:px-20 py-10 text-white">
+        <div class="capitalize font-medium text-[28px] md:text-[42px] leading-tight">
+            <h2>hi <span class="text-amber-300">welcome</span> to <br> <span class="text-blue-400">daniel hotel</span>
+                in kpk</h2>
+        </div>
+        <div class="font-mono capitalize pt-4 text-sm md:text-base text-zinc-200 max-w-[600px]">
+            we welcome all gentlemen and appreciate my khyber pakhtunkhwa city. this site is very beautiful so please
+            come make a happy life
+        </div>
+        <button class="mt-8 bg-amber-400 text-black px-8 py-3 rounded-full font-bold hover:scale-105 transition">Explore
+            Rooms</button>
+    </div>
+
+    <!-- 3D CARDS -->
+    <div id="about" class="px-6 md:px-20 py-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div
+            class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 text-white hover:-translate-y-2 transition-all duration-500">
+            <div class="w-12 h-12 bg-amber-400 rounded-xl flex items-center justify-center text-black text-2xl mb-4">🏨
+            </div>
+            <h3 class="text-xl font-bold">Luxury Rooms</h3>
+            <p class="text-sm text-zinc-300 mt-2">Best rooms in KPK with mountain view and 24/7 service.</p>
+        </div>
+        <div
+            class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 text-white hover:-translate-y-2 transition-all duration-500">
+            <div class="w-12 h-12 bg-blue-400 rounded-xl flex items-center justify-center text-black text-2xl mb-4">🍽️
+            </div>
+            <h3 class="text-xl font-bold">KPK Special Food</h3>
+            <p class="text-sm text-zinc-300 mt-2">Authentic Chapli Kabab, Peshawari Karahi & more.</p>
+        </div>
+        <div
+            class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 text-white hover:-translate-y-2 transition-all duration-500">
+            <div class="w-12 h-12 bg-green-400 rounded-xl flex items-center justify-center text-black text-2xl mb-4">🏔️
+            </div>
+            <h3 class="text-xl font-bold">Swat Valley Tour</h3>
+            <p class="text-sm text-zinc-300 mt-2">Explore beautiful Barikot, Mingora & Kalam with guide.</p>
+        </div>
+    </div>
+
+    <!-- ROOMS - Fixed Image Names -->
+    <div id="rooms" class="px-6 md:px-20 pb-16">
+        <h2 class="text-white text-2xl md:text-3xl font-bold text-center mb-10">Our <span class="text-amber-400">Best
+                Rooms</span></h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="relative h-[300px] rounded-2xl overflow-hidden group">
+                <img src="./download.jpg"
+                    class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                    onerror="this.src='https://images.unsplash.com/photo-1560448204-e02f11c3d0e2'">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                <div class="absolute bottom-0 p-5 text-white">
+                    <h4 class="font-bold">Deluxe Room - 3500/night</h4>
+                    <button class="mt-2 bg-amber-400 text-black text-xs px-4 py-2 rounded-full font-bold">Book
+                        Now</button>
+                </div>
+            </div>
+            <div class="relative h-[300px] rounded-2xl overflow-hidden group">
+                <img src="./download.jpg"
+                    class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                    onerror="this.src='https://images.unsplash.com/photo-1551882547-b79c5a67a5a1'">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                <div class="absolute bottom-0 p-5 text-white">
+                    <h4 class="font-bold">Family Suite - 6000/night</h4>
+                    <button class="mt-2 bg-amber-400 text-black text-xs px-4 py-2 rounded-full font-bold">Book
+                        Now</button>
+                </div>
+            </div>
+            <div class="relative h-[300px] rounded-2xl overflow-hidden group">
+                <img src="./images.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                    onerror="this.src='https://images.unsplash.com/photo-1520250497591-112f2f40a3f4'">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                <div class="absolute bottom-0 p-5 text-white">
+                    <h4 class="font-bold">VIP Mountain View</h4>
+                    <button class="mt-2 bg-amber-400 text-black text-xs px-4 py-2 rounded-full font-bold">Book
+                        Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BIRTHDAY -->
+    <div class="px-6 md:px-20 py-12">
+        <h2 class="text-white text-2xl md:text-3xl font-bold text-center">Celebrate <span class="text-pink-400">Your
+                Special Days</span></h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+            <div class="bg-pink-500/20 backdrop-blur border border-pink-500/30 rounded-2xl p-6 text-white">
+                <div class="text-3xl mb-2">🎂</div>
+                <h3 class="font-bold">Birthday Party</h3>
+                <p class="text-sm text-zinc-300 mt-2">Decoration, Cake, Music</p>
+                <p class="text-amber-300 font-bold mt-2">5000 PKR</p>
+            </div>
+            <div class="bg-amber-500/20 backdrop-blur border border-amber-500/30 rounded-2xl p-6 text-white">
+                <div class="text-3xl mb-2">💍</div>
+                <h3 class="font-bold">Wedding Event</h3>
+                <p class="text-sm text-zinc-300 mt-2">Hall + Food + Decor</p>
+                <p class="text-amber-300 font-bold mt-2">50,000 PKR</p>
+            </div>
+            <div class="bg-red-500/20 backdrop-blur border border-red-500/30 rounded-2xl p-6 text-white">
+                <div class="text-3xl mb-2">❤️</div>
+                <h3 class="font-bold">Anniversary</h3>
+                <p class="text-sm text-zinc-300 mt-2">Candle light dinner</p>
+                <p class="text-amber-300 font-bold mt-2">8000 PKR</p>
+            </div>
+            <div class="bg-blue-500/20 backdrop-blur border border-blue-500/30 rounded-2xl p-6 text-white">
+                <div class="text-3xl mb-2">💼</div>
+                <h3 class="font-bold">Business Meet</h3>
+                <p class="text-sm text-zinc-300 mt-2">Conference Hall</p>
+                <p class="text-amber-300 font-bold mt-2">10,000 PKR</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-6 text-zinc-400 text-sm border-t border-white/10">© 2026 Daniel Hotel Barikot - Made
+        with ❤️ in KPK</footer>
+</body>
+
+</html>
